@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by ApplusForm.com on 2013.8.6
+
+	Permission is granted to copy, distribute, modify under the terms of ApplusForm License.
+
+	Copyright (C) 2014 ApplusForm.com. All rights reserved.
+-->
+<MOML version="1.1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui_1.1.5.xsd">
+	<THEMES id="theme1">
+		<THEME id="radio1" style="button" groupId="citrineSubMenu" layout="106,40" defaultImg="tab.png" checkedImg="tab_checked.png" textColor="#ffffff" align="linear:center" />
+	</THEMES>
+	<UILAYOUT portrait="320,460" landscape="320,460" theme="theme1">
+		<LABEL id="navigationTitle" themeId="themeNavigationTitle" text="About Citrine" onClick="">
+			<BUTTON themeId="themeMenuBtn" />
+		</LABEL>
+		<WINDOW id="tabMenu" themeId="themeMainTabMenu">
+			<RADIO themeId="radio1" selected="true" onClick="con1.src='overview.xml'">
+				<LABEL text="Overview" textColor="#ffffff" />
+			</RADIO>
+			<RADIO themeId="radio1" onClick="con1.src='feature.xml'">
+				<LABEL text="Feature" textColor="#ffffff" />
+			</RADIO>
+			<RADIO themeId="radio1" onClick="con1.src='effect.xml'">
+				<LABEL text="Effect" textColor="#ffffff" />
+			</RADIO>
+		</WINDOW>
+		<CONTAINER id="con1" layout="0,80,320,380" src="overview.xml" defaultImg="#ffffff" />
+	</UILAYOUT>
+</MOML>

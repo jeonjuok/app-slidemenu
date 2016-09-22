@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by ApplusForm.com on 2013.8.6
+
+	Permission is granted to copy, distribute, modify under the terms of ApplusForm License.
+
+	Copyright (C) 2014 ApplusForm.com. All rights reserved.
+-->
+<MOML version="1.1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui_1.1.5.xsd">
+	<FUNCTION id="mailAni">
+		<CMD cmd="animation.flyOut('mail', 0,0,30,10,'', 1000, '')" />
+		<CMD cmd="animation.hide('mail', 'fade', '', 1000, '')" />
+		<CMD cmd="animation.flyIn('mail', 0,10,30,10,'', 1000, '')" delay="2000" />
+		<CMD cmd="animation.show('mail', 'fade', '', 1000, '')" delay="2000" />
+		<CMD cmd="function.mailAni" delay="8000" />
+	</FUNCTION>
+	<CMD cmd="function.mailAni" delay="3000" />
+
+	<UILAYOUT portrait="320,460" landscape="320,460">
+		<LABEL id="navigationTitle" themeId="themeNavigationTitle" text="Contact us" onClick="">
+			<BUTTON themeId="themeMenuBtn" />
+		</LABEL>
+		<WINDOW layout="0,40,320,420" defaultImg="#ffffff">
+			<BUTTON layout="30,30,200,30" defaultImg="#ffffff" pressedImg="#ffffff" align="linear:horizontal|subCenter"
+				onClick="appLauncher.canOpenUri('mailto:mospi@mospi.org') == true?appLauncher.openUri('mailto:mospi@mospi.org', ''):device.systemPopup('','전송 가능한 메일 서버가 설정되어 있지 않습니다.\n 환경설정에서 메일을 설정해주세요.', '확인', '','')">
+				<LABEL id="mail" layout="30,20" defaultImg="mail.png" />
+				<LABEL text="mospi@mospi.org" fontStyle="underline" textColor="#8899ee" />
+			</BUTTON>
+			<WEBVIEW layout="10,80,300,300" src="map.htm" controls="none" />
+		</WINDOW>
+	</UILAYOUT>
+</MOML>

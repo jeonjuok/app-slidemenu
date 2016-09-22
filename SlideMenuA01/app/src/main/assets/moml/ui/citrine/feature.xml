@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by ApplusForm.com on 2013.8.6
+
+	Permission is granted to copy, distribute, modify under the terms of ApplusForm License.
+
+	Copyright (C) 2014 ApplusForm.com. All rights reserved.
+-->
+<MOML version="1.1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui_1.1.5.xsd">
+	<UILAYOUT portrait="320,380" landscape="320,380">
+		<WINDOW layout="10,0,300,380" scroll="vertical" align="linear:vertical">
+			<LABEL layout="300,auto" multiLine="true" minFontSize="0" fontSize="10"
+				text="&#10;
+- Object Oriented Approach&#10;
+  This approach solves inefficiency for mobile app development through object oriented approaches using MOML (Mobile Object Markup Language)&#10;
+  &#10; 
+- Simple functional definition&#10;
+  This defines complicated functions by abstracting them matched with actual usage.&#10;
+  &#10; 
+- Independent development&#10;
+  This independently separates library developers from application developments and implements a base to integrate them easily.&#10;
+  &#10; 
+- Component based structure&#10;
+  It provides a base by which services developed by service providers are integrated with other applications.&#10; 
+			" />
+		</WINDOW>
+	</UILAYOUT>
+</MOML>

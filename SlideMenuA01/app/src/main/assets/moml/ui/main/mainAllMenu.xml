@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by ApplusForm.com on 2013.8.6
+
+	Permission is granted to copy, distribute, modify under the terms of ApplusForm License.
+
+	Copyright (C) 2014 ApplusForm.com. All rights reserved.
+-->
+<MOML version="1.1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui_1.1.5.xsd">
+	<FUNCTION id="hideAni(item)">
+		<CMD cmd="con = caller.prev" />
+		<CMD cmd="overlay.defaultImg=image.capture(con, 0, 0, con.width, con.height)" />
+		<CMD cmd="animation.hide('allLayout', 'fade', 'easeIn3', 700, '')" />
+		<CMD cmd="animation.flyIn('overlay', con.left, con.top, con.width, con.height, 'easeIn3', 500, '')" delay="200"/>
+		<CMD cmd="userVariable.selectedItem = item" />
+		<CMD cmd="document.document.navigation.selectedItem=userVariable.selectedItem" delay="700" />
+	</FUNCTION>
+
+	<UILAYOUT portrait="320,460" landscape="320,460">
+		<WINDOW layout="0,0,320,460" defaultImg="#000000" />
+		<WINDOW id="allLayout" layout="0,0,320,460" >
+			<WINDOW id="allMenu" layout="0,0,320,460" scroll="vertical" scrollBarVisible="true" onClick="'none'">
+				<CONTAINER id="info" layout="5,45,150,170" src="../info/infoMain.xml" enabled="false" />
+				<BUTTON layout="5,45,150,170" text="About MoSPI" textShadow="#333333" textColor="#ffffff" fontSize="16" defaultImg="#88000000" onClick="function.hideAni('info')" />
+
+				<CONTAINER layout="160,45,150,170" src="../contact/contact.xml" enabled="false" />
+				<BUTTON layout="160,45,150,170" text="Contact us" textShadow="#333333" textColor="#ffffff" fontSize="16" defaultImg="#88000000" onClick="function.hideAni('contact')" />
+
+				<CONTAINER id="map" layout="5,220,150,170" src="../citrine/citrine.xml" enabled="false" />
+				<BUTTON layout="5,220,150,170" text="About Citrine" textShadow="#333333" textColor="#ffffff" fontSize="16" defaultImg="#88000000" onClick="function.hideAni('citrine')" />
+
+				<CONTAINER layout="160,220,150,170" src="../license/license.xml" enabled="false" />
+				<BUTTON layout="160,220,150,170" text="License" textShadow="#333333" textColor="#ffffff" fontSize="16" defaultImg="#88000000" onClick="function.hideAni('license')" />
+
+			</WINDOW>
+			<BUTTON layout="280,0,40,40" text="X" textColor="#ffffff" defaultImg="#000000" onClick="document.document.navigation.selectedItem=userVariable.selectedItem" />
+		</WINDOW>
+		<WINDOW id="overlay" layout="0,0,320,460" visible="invisible" >
+			<WINDOW layout="0,0,640,920" defaultImg="#88000000" />
+		</WINDOW>
+	</UILAYOUT>
+</MOML>

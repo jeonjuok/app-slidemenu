@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Created by ApplusForm.com on 2013.8.6
+
+	Permission is granted to copy, distribute, modify under the terms of ApplusForm License.
+
+	Copyright (C) 2014 ApplusForm.com. All rights reserved.
+-->
+<MOML version="1.1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui_1.1.5.xsd">
+	<UILAYOUT portrait="320,380" landscape="320,380">
+		<WINDOW layout="10,0,300,380" scroll="vertical" align="linear:vertical">
+			<IMAGE layout="300,90" defaultImg="effect.png" />
+			<LABEL layout="300,auto" multiLine="true" minFontSize="0" fontSize="10"
+				text="
+&#10;
+- Even junior developers can use them easily by providing objects with simple and frequently used APIs which are collected from complicated functions even though they have complicated functions&#10; 
+ &#10;
+- Reusability for newly added codes is enhanced as they are added being matched with objected frames.&#10; 
+ &#10;
+- Even though library developers do not make applications through component markets, libraries themselves can be sold for several programs.&#10; 
+
+			" />
+		</WINDOW>
+	</UILAYOUT>
+</MOML>

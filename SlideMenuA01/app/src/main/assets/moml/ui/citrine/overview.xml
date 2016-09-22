@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by ApplusForm.com on 2013.8.6
+
+	Permission is granted to copy, distribute, modify under the terms of ApplusForm License.
+
+	Copyright (C) 2014 ApplusForm.com. All rights reserved.
+-->
+<MOML version="1.1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui_1.1.5.xsd">
+	<UILAYOUT portrait="320,380" landscape="320,380">
+		<WINDOW layout="10,0,300,380" scroll="vertical" align="linear:vertical">
+			<IMAGE layout="300,180" defaultImg="overview.png" />
+			<LABEL layout="300,auto" multiLine="true" minFontSize="0" fontSize="10"
+				text="- Citrine Step 1 (Page Downloadable Apps) [SDK Version 1.0.0]&#10;
+&#10;
+1. UI Layout&#10;
+  Layout by providing a variety of UI object helps you easily can be placed.&#10;
+  Linear layout, rotation processing are provided. &#10;
+&#10;
+2. Multi-resolution support&#10;
+  Citrine supports various resolutions for each device(ex : iPhone, iPad, Android, etc),&#10;
+  developer develope application without having to worry about the resolution.&#10;
+&#10;
+3. Native Code is interlocked.(UI and logic separation)&#10;
+  From Step 1 to provide features that can not be simulated with the XML syntax (the device works,&#10;
+  external works, UI Element's event processing) is to be implemented in native code directly.&#10;
+&#10;
+4. Theme&#10;
+  Theming capabilities by providing professional-quality design that help you make it easy to set.&#10;
+  Based on Android, iPhone style themes are available.&#10;
+  Provides additional features custom theme.&#10;
+			" />
+		</WINDOW>
+	</UILAYOUT>
+</MOML>

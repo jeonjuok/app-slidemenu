@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Created by ApplusForm.com on 2013.8.6
+
+	Permission is granted to copy, distribute, modify under the terms of ApplusForm License.
+
+	Copyright (C) 2014 ApplusForm.com. All rights reserved.
+-->
+<MOML version="1.1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.applusform.com/xsd/moml_ui_1.1.6.xsd">
+
+
+	<!-- iOS7 대응 처리 -->
+	<CMD condition="device.os.platform=='iOS' and math.sub(string.split(device.os.version, '.', 0), 7) ge 0 and application.height == device.screen.height" cmd="userVariable.sbHeight=20, mainContainer.top=userVariable.sbHeight, mainContainer.height=460-userVariable.sbHeight"
+		elseCmd="userVariable.sbHeight=0" />
+
+	<UILAYOUT portrait="320,460" landscape="320,460">
+		<WINDOW layout="0,0,320,460" defaultImg="#ffffff" />
+		<CONTAINER id="mainContainer" layout="0,0,320,460" defaultImg="#ffffff" src="main.xml" />
+	</UILAYOUT>
+</MOML>
